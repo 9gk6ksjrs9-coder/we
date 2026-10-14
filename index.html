@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人主页 | My Space</title>
+  <meta name="description" content="我的个人主页，记录学习、创意与成长。">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f8f7f4;
+      color: #262626;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", Arial, "PingFang SC",
+        "Microsoft YaHei", sans-serif;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 88%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid #e7e4de;
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .hero {
+      padding: 100px 0 90px;
+    }
+
+    .eyebrow {
+      color: #888;
+      font-size: 11px;
+      letter-spacing: 3px;
+    }
+
+    h1 {
+      margin: 24px 0;
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: 1.3;
+      font-weight: 500;
+      letter-spacing: -1.5px;
+    }
+
+    .intro {
+      max-width: 600px;
+      color: #666;
+      font-size: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #262626;
+      color: white;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    section {
+      padding: 60px 0;
+      border-top: 1px solid #e7e4de;
+    }
+
+    .section-label {
+      color: #888;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      margin: 12px 0 20px;
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .description {
+      max-width: 680px;
+      color: #666;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .project {
+      padding: 24px;
+      background: #fff;
+      border: 1px solid #e8e5df;
+      border-radius: 6px;
+    }
+
+    .project-number {
+      color: #888;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      margin: 12px 0 8px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .project p {
+      margin-bottom: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 24px 0;
+      border-top: 1px solid #e7e4de;
+      color: #888;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#">MY SPACE.</a>
+      <div class="nav-links">
+        <a href="#about">关于我</a>
+        <a href="#projects">我的作品</a>
+        <a href="#contact">联系方式</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="eyebrow">WELCOME TO MY PERSONAL WEBSITE</div>
+      <h1>你好，欢迎来到<br>我的个人空间。</h1>
+      <p class="intro">
+        这里记录我的学习、思考与创意。
+        我正在探索数字媒体、品牌传播与创意设计，
+        希望把每一个想法慢慢变成真实的作品。
+      </p>
+      <a class="button" href="#projects">浏览我的作品 ↗</a>
+    </div>
+
+    <section id="about">
+      <div class="section-label">01 / ABOUT</div>
+      <h2>关于我</h2>
+      <p class="description">
+        我是一名对数字媒体和创意传播感兴趣的学生。
+        我喜欢观察社交媒体、品牌故事与数字文化，
+        也希望通过这个网站记录自己的学习过程和成长。
+      </p>
+    </section>
+
+    <section id="projects">
+      <div class="section-label">02 / PROJECTS</div>
+      <h2>我的作品</h2>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project-number">PROJECT 01</div>
+          <h3>数字媒体研究</h3>
+          <p>记录课程研究、文献阅读与社交媒体观察。</p>
+        </article>
+
+        <article class="project">
+          <div class="project-number">PROJECT 02</div>
+          <h3>创意内容设计</h3>
+          <p>展示视觉设计、数字内容和创意策划。</p>
+        </article>
+
+        <article class="project">
+          <div class="project-number">PROJECT 03</div>
+          <h3>品牌传播分析</h3>
+          <p>分享品牌案例、传播策略与营销思考。</p>
+        </article>
+
+        <article class="project">
+          <div class="project-number">PROJECT 04</div>
+          <h3>学习与成长</h3>
+          <p>整理学习笔记、课程收获与未来计划。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-label">03 / CONTACT</div>
+      <h2>保持联系</h2>
+      <p class="description">
+        欢迎交流数字媒体、创意设计与有趣的想法。
+      </p>
+      <p>
+        <a href="mailto:your-email@example.com">
+          your-email@example.com ↗
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 My Space. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
